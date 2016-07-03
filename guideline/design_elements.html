@@ -1,0 +1,403 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html ng-app="jndLandingApp" lang="ko" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html ng-app="jndLandingApp" lang="ko" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html ng-app="jndLandingApp" lang="ko" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-app="jndLandingApp" lang="ko" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>JANDI 디자인 가이드라인</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./javascript/common.js"></script>
+  <script src="./javascript/icon.js"></script>
+</head>
+<body>
+  <div id="header" class="header">
+    <h1 class="home-path">
+      <a href="./index.html" class="logo"><img src="./assets/images/jnd-logo.png">
+        <em class="fn-noto">잔디 디자인 가이드라인</em>
+      </a>
+    </h1>
+    <nav id="gnb" class="gnb">
+      <ul>
+        <li><a href="./design_elements.html">스타일</a></li>
+        <li><a href="./ui_components.html">UI 요소</a></li>
+        <li><a href="./pattern.html">레이아웃 패턴</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="page_wrap" class="page-wrap">
+    <nav id="lnb" class="lnb">
+      <ul>
+        <li><a href="#color">Color</a></li>
+        <li><a href="#typography">Font</a></li>
+        <li><a href="#icons">Icons</a></li>
+        <li><a href="#layout">Layout</a></li>        
+        <li><a href="#grid">Grid System</a></li>
+        
+      </ul>
+  </nav>
+  <div class="content">
+    <section class="main_section color" id="color">
+      <header>
+        <h1 class="title">Color</h1>
+        <p>잔디 색상 세트입니다.</p>
+      </header>
+      <section class="design_palette">
+        <header>
+          <h2>Main Color</h2>
+        </header>
+        <div class="section-content bg-info-sect">
+          <div class="palette-container">
+            <div class="bg-color-box blue-box">JANDI<br/>Blue</div>
+            <div class="bg-info-box">#00ace9<br/>rgba (0, 172, 233, 1)</div>
+          </div>
+          <div class="palette-container">
+            <div class="bg-color-box navy-box">JANDI<br/>Navy</div>
+            <div class="bg-info-box">#11476f<br/>rgba (17, 71, 111, 1)</div>
+          </div>
+        </div>
+        <header>
+          <h2>Main Font Color</h2>
+        </header>
+        <div class="section-content font-info-sect">
+          <ul class="list">
+            <li><span class="sym-middot">body inherit(#333)</span><p class="ex">@잔디 폰트 색상 세트입니다.</p></li>
+            <li><span class="sym-middot">a tag</span><p class="ex"><a>@잔디 폰트 색상 세트입니다.</a></p></li>
+            <li><span class="sym-middot">fc-main(#333)</span><p class="fc-main ex">@잔디 폰트 색상 세트입니다.</p></li>
+            <li><span class="sym-middot">fc-blue(#00ace9)</span><p class="fc-blue ex">@잔디 폰트 색상 세트입니다.</p></li>
+            <li><span class="sym-middot">fc-navy(#808080)</span><p class="fc-navy ex">@잔디 폰트 색상 세트입니다.</p></li>
+            <li><span class="sym-middot">fc-gray(#808080)</span><p class="fc-gray ex">@잔디 폰트 색상 세트입니다.</p></li>            
+            <li><span class="sym-middot">fc-anchor(with important)</span><p class="ex line-10"><a class="fc-anchor">@잔디 폰트 색상 세트입니다.</a></p></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="main_section typography" id="typography">
+      <header>
+        <h1 class="title">Font</h1>
+        <p>잔디 서비스 내에서 사용하는 서체는 아래와 같으며 공통으로 쓰이는 영어서체를 위해 'Roboto'와 'Arial'을 먼저 선언합니다.</p>
+      </header>
+      <section class="section-content">
+        <dl class="font-family">
+          <dt lang="ko" class="sym-middot"><strong>한국어</strong>-맑은 고딕 / Noto Sans Korean</dt>
+          <dd lang="ko">{ font-family:'Roboto', Arial, 'Malgun Gothic', '맑은 고딕' , 'Noto Sans Korean', sans-serif, serif }</dd>
+          <dt lang="en" class="sym-middot"><strong>English</strong>-Roboto / Arial</dt>
+          <dd lang="en">{ font-family:font-family: 'Roboto', Arial, sans-serif, serif }</dd>
+          <dt lang="jp" class="sym-middot"><strong>日本語</strong>-"Hiragino Kaku Gothic Pro" / "ヒラギノ角ゴ Pro W3",</dt>
+          <dd lang="jp">{ font-family:'Roboto', Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", helvetica, sans-serif }</dd>
+          <dt lang="zh-cn" class="sym-middot"><strong>简体中文</strong></dt>
+          <dd lang="zh-cn">{ font-family:'Roboto', Arial, "Helvetica Neue",Helvetica,Arial,sans-serif }</dd>
+          <dt lang="zh-tw" class="sym-middot"><strong>繁體中文</strong></dt>
+          <dd lang="zh-tw">{ font-family:'Roboto', Arial, "Helvetica Neue",Helvetica,Arial,sans-serif }</dd>
+        </dl>
+      </section>
+    </section>
+    
+    <section class="main_section layout" id="layout">
+
+      <header>
+        <h1 class="title">Layout</h1>
+        <p>잔디의 레이아웃은 페이지 성격에 따라 아래와 같은 네가지 종류를 사용합니다.</p>
+      </header>
+
+      <section class="web_client_app">
+        <header>
+          <h2>App</h2>
+          <p>웹 앱(App) Client 화면 구성</p>
+        </header>
+        <div class="section-content">
+          <figure class="section-content-img">
+            <img class="section-element-img" src="assets/images/layout_client.svg">
+          </figure>
+          <figcaption>웹 앱 화면 구성은 빠르고 정확한 메시지 커뮤니케이션이 이루어지도록 돕는 것에 중점을 둡니다. 
+            <br/>
+            브라우저 가로 영역 전체를 사용하는 풀 사이즈의 레이아웃을 사용하며, 하나의 gnb 아래에 lnb/chat/toolbar 세 영역으로 나뉩니다. 중앙 패널 영역에서 메시지 확인과 전송이 이루어집니다.
+            왼쪽 패널은 나의 토픽 및 1:1 메시지 목록을 보여줍니다. 
+            또한 파일 리스트/메시지 검색/즐겨찾기/멘션 4가지의 보조 탭으로 사용할 수 있는 오른쪽 패널은 클릭에 따라 열고 닫기가 가능합니다. 
+            필요한 경우 오른쪽 패널을 열어두고 파일 리스트, 메시지 검색, 즐겨찾기 리스트, 멘션 리스트를 바로 확인할 수 있으며, 중앙 패널만을 넓게 사용하고 싶을 경우 닫아둘 수도 있습니다.
+            <!--lnb:min-width:240px
+            chat:min-width:560px
+            toolbar:width:400px-->
+          </figcaption>
+        </div>
+      </section>
+      <section class="main_section icons" id="icons">
+        <header>
+          <h1 class="title">Icons</h1>
+          <p>icon-font를 이용하며 icon-으로 class 명이 시작한다. 이곳의 class는 모양을 나타내기 위한 클래스로 페이지내의 스타일지정시 되도록이면 style class 명을 따로 추가해서 선언한다. </p>
+        </header>
+        <section class="icon-list">
+          <div class="section-content">
+            <div class="icon-list-container">
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="web_client_connect">
+        <header>
+          <h2>App—JANDI Connect</h2>
+          <p>웹 앱 내의 잔디 커넥트 페이지 구성</p>
+        </header>
+        <div class="section-content">
+          <figure class="section-content-img">
+            <img class="section-element-img" src="assets/images/layout_connect.svg">
+          </figure>
+          <figcaption>
+            잔디 커넥트 페이지는 최대 가로 폭(width)을 갖고 있으며 중앙 정렬 레이아웃입니다. 또한 각각의 독립된 연동 기능을 개별적으로 설정하고 관리하기에 적합한 카드 레이아웃을 사용합니다.
+        </div>
+      </section>
+
+      <section class="web_admin">
+        <header>
+          <h2>Admin</h2>
+          <p>웹 관리자 페이지 구성</p>
+        </header>
+        <div class="section-content">
+          <figure class="section-content-img">
+            <img class="section-element-img" src="assets/images/layout_admin.svg">
+          </figure>
+          <figcaption>어드민 페이지는 최대 가로 폭(width)을 갖고 있으며 중앙 정렬 레이아웃입니다. 왼쪽 사이드바와 컨텐츠 영역으로 나뉘는 구성으로 왼쪽 사이드바에서 어드민 페이지의 메뉴들을 확인할 수 있습니다. 컨텐츠 영역은 페이지 성격에 따라 적합한 레이아웃으로 구성합니다. </figcaption>
+        </div>
+      </section>
+
+      <section class="web_landing">
+        <header>
+          <h2>Landing Page</h2>
+          <p>랜딩 페이지 화면 구성</p>
+        </header>
+        <div class="section-content">
+          <figure class="section-content-img">
+            <img class="section-element-img" src="assets/images/layout_landing.svg">
+          </figure>
+          <figcaption>잔디 랜딩 페이지는 상단 메뉴 영역과 Header 이미지 영역, 그리고 최대 너비가 지정된 컨텐츠 영역으로 구성되어 있습니다. </figcaption>
+        </div>
+      </section>
+    </section>
+
+    
+    <section class="main_section grid-system" id="grid">
+      <header>
+        <h1>Grid System</h1>
+        <p>잔디의 그리드 시스템은 10분할 Column을 사용합니다. 각 Column의 여백은 전체 가로폭에 따라 8px(small), 12px(normal), 24px(large)을 적용합니다. </p>
+      </header>
+      <section class="grid-system-size">
+        <div class="section-content grid-container">
+          <h6>8px(small)</h6>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--2_of_12_small">2</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--3_of_12_small">3</div>
+            <div class="jui-grid--3_of_12_small">3</div>
+            <div class="jui-grid--3_of_12_small">3</div>
+            <div class="jui-grid--3_of_12_small">3</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--4_of_12_small">4</div>
+            <div class="jui-grid--4_of_12_small">4</div>
+            <div class="jui-grid--4_of_12_small">4</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--5_of_12_small">5</div>
+            <div class="jui-grid--5_of_12_small">5</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--6_of_12_small">6</div>
+            <div class="jui-grid--6_of_12_small">6</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--7_of_12_small">7</div>
+            <div class="jui-grid--5_of_12_small">5</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--8_of_12_small">8</div>
+            <div class="jui-grid--4_of_12_small">4</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--9_of_12_small">9</div>
+            <div class="jui-grid--3_of_12_small">3</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--10_of_12_small">10</div>
+            <div class="jui-grid--2_of_12_small">2</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--11_of_12_small">11</div>
+            <div class="jui-grid--1_of_12_small">1</div>
+          </div>
+          <div class="jui-grid--full_small">
+            <div class="jui-grid--12_of_12_small">10</div>
+          </div>
+        </div>
+
+        <div class="section-content grid-container">
+          <h6>12px(normal)</h6>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--2_of_12_normal">2</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--3_of_12_normal">3</div>
+            <div class="jui-grid--3_of_12_normal">3</div>
+            <div class="jui-grid--3_of_12_normal">3</div>
+            <div class="jui-grid--3_of_12_normal">1</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--4_of_12_normal">4</div>
+            <div class="jui-grid--4_of_12_normal">4</div>
+            <div class="jui-grid--4_of_12_normal">4</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--5_of_12_normal">5</div>
+            <div class="jui-grid--5_of_12_normal">5</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--6_of_12_normal">6</div>
+            <div class="jui-grid--6_of_12_normal">6</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--7_of_12_normal">7</div>
+            <div class="jui-grid--5_of_12_normal">5</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--8_of_12_normal">8</div>
+            <div class="jui-grid--4_of_12_normal">4</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--9_of_12_normal">9</div>
+            <div class="jui-grid--3_of_12_normal">3</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--10_of_12_normal">10</div>
+            <div class="jui-grid--2_of_12_normal">2</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--11_of_12_normal">11</div>
+            <div class="jui-grid--1_of_12_normal">1</div>
+          </div>
+          <div class="jui-grid--full_normal">
+            <div class="jui-grid--12_of_12_normal">12</div>
+          </div>
+        </div>
+
+        <div class="section-content grid-container">
+          <h6>24px(large)</h6>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--2_of_12_large">2</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--3_of_12_large">3</div>
+            <div class="jui-grid--3_of_12_large">3</div>
+            <div class="jui-grid--3_of_12_large">3</div>
+            <div class="jui-grid--3_of_12_large">3</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--4_of_12_large">4</div>
+            <div class="jui-grid--4_of_12_large">4</div>
+            <div class="jui-grid--4_of_12_large">4</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--5_of_12_large">5</div>
+            <div class="jui-grid--5_of_12_large">5</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--6_of_12_large">6</div>
+            <div class="jui-grid--6_of_12_large">6</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--7_of_12_large">7</div>
+            <div class="jui-grid--5_of_12_large">5</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--8_of_12_large">8</div>
+            <div class="jui-grid--4_of_12_large">4</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--9_of_12_large">9</div>
+            <div class="jui-grid--3_of_12_large">3</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--10_of_12_large">10</div>
+            <div class="jui-grid--2_of_12_large">2</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--11_of_12_large">11</div>
+            <div class="jui-grid--1_of_12_large">1</div>
+          </div>
+          <div class="jui-grid--full_large">
+            <div class="jui-grid--12_of_12_large">12</div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+
+
+  </div>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1299 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html ng-app="jndLandingApp" lang="{{displayLanguage}}" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html ng-app="jndLandingApp" lang="{{displayLanguage}}" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html ng-app="jndLandingApp" lang="{{displayLanguage}}" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-app="jndLandingApp" lang="{{displayLanguage}}" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>JANDI 디자인 가이드라인</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./javascript/common.js"></script>
+</head>
+<body>
+  <div id="header" class="header">
+    <h1 class="home-path">
+      <a href="./index.html" class="logo"><img src="./assets/images/jnd-logo.png">
+        <em class="fn-noto">잔디 디자인 가이드라인</em>
+      </a>
+    </h1>
+    <nav id="gnb" class="gnb">
+      <ul>
+        <li><a href="./design_elements.html">스타일</a></li>
+        <li><a href="./ui_components.html">UI 요소</a></li>
+        <li><a href="./pattern.html">레이아웃 패턴</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="page_wrap" class="page-wrap">
+    <nav id="lnb" class="lnb">
+      <ul>
+        <li><a href="">Navigation<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Buttons<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Checkboxes<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Radio Buttons<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Toggle<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Selectboxes<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Badges<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Label<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Pills<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Notifications<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Popover<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Tooltips<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Dropdown<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Forms<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Modal<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Search<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Spinners<i class="icon-angle-right"></i></a></li>
+        <li><a href="">Progress Bar<i class="icon-angle-right"></i></a></li>
+      </ul>
+  </nav>
+  <div class="content">
+    <section class="main_section navigation">
+      <header>
+        <h1>Navigation</h1>
+      </header>
+      <section class="top_navigation">
+        <header>
+          <h2>Top Navigation</h2>
+          <p>Header 메뉴</p>
+        </header>
+        <div class="section-content grid-container">
+          <div class="jnb-gnb">
+            <!-- LEFT MENU -->
+            <div class="gnb-menu">
+              <!-- TEAM -->
+              <div class="header-navbar-menu" id="team-menu">
+                <span class="header-navbar__topmenu">
+                  <i class="icon-reorder header-navbar__menu-icon"></i>
+                  <span class="header-navbar__title">Team</span>
+                </span>
+              </div>
+              <!-- END OF MENU -->
+              <div class="divider"></div>
+              <!-- INVITE -->
+              <div class="header-navbar-invite" id="invite">
+                <span class="header-navbar__topmenu">
+                  <i class="icon-user-plus header-navbar__menu-icon"></i>
+                  <span class="header-navbar__title">invite</span>
+                </span>
+              </div>
+              <!-- END OF MENU -->
+              <!-- HELP -->
+              <div class="header-navbar-settings">
+                <span class="header-navbar__topmenu">
+                  <i class="icon-help"></i>
+                  <i class="icon-angle-down"></i>
+                </span>
+              </div>
+              <!-- END OF MENU -->
+              <!-- QUICK LAUNCHER -->
+              <div class="header-navbar-quick-launcher">
+                <span class="quick-launcher">
+                  <span>Jump</span>
+                </span>
+              </div>
+              <!-- END OF MENU -->
+            </div>
+            <!-- RIGHT MENU -->
+            <div class="info-tools gnb-toolbar pull-right">
+              <ul>
+                <li>
+                  <a class="info-tool file-tool">
+                    <i class="icon-file"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="info-tool message-tool">
+                    <i class="icon-chat"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="info-tool star-tool">
+                    <i class="icon-star-off"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="info-tool mention-tool">
+                    <i class="icon-at"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="left_navigation">
+        <header>
+          <h2>Left Navigation</h2>
+          <p>Topic/DM List</p>
+        </header>
+        <div class="section-content grid-container">
+          <div class="left_nav">
+            <div class="lpanel-list">
+              <!-- TOPICS -->
+              <div class="lpanel-list__topicslist">
+                <!-- HEADER -->
+                <div class="lpanel-list__header cursor_pointer">
+                  <i class="lpanel-collapse-arrow icon-arrow-up-fill"></i>
+                  <span class="lpanel-list__title inline-overflow-ellipsis">Topics</span>
+                  <div class="lpanel-list-option pull-right" style="display: block;">
+                    <i class="icon-plus"></i>
+                  </div>
+                  <div class="lpanel-list-option pull-right" style="display: block;">
+                    <i class="icon-reorder"></i>
+                  </div>
+                </div>
+                <div class="lpanel-list__topics">
+                  <div class="topics-list">
+                    <div class="topic-folder has-folder">
+                      <div class="topic-folder-border"></div>
+                      <div class="topic-folder-area">
+                        <div class="topic-folder-title cursor_pointer">
+                          <span class="topic-folder-area-icon">
+                            <i class="icon-folder"></i>
+                          </span>
+                          <span class="topic-folder-title-text">
+                            Management
+                          </span>
+                          <span class="topic-folder-more">
+                            <i class="icon-more-fill"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic-folder has-folder open">
+                      <div class="topic-folder-border"></div>
+                      <div class="topic-folder-area">
+                        <div class="topic-folder-title cursor_pointer">
+                          <span class="topic-folder-area-icon">
+                            <i class="icon-folder"></i>
+                          </span>
+                          <span class="topic-folder-title-text">
+                            Product
+                          </span>
+                          <span class="topic-folder-more">
+                            <i class="icon-more-fill"></i>
+                          </span>
+                        </div>
+                        <ul>
+                          <li>
+                            <a>
+                              <i class="icon-star-on left-star"></i>
+                              <span class="inline-overflow-ellipsis left-panel__name">Design - 디자인</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <i class="icon-star-on left-star"></i>
+                              <span class="inline-overflow-ellipsis left-panel__name">Development - 개발</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a>
+                              <i class="icon-star-off left-star"></i>
+                              <span class="inline-overflow-ellipsis left-panel__name">Marketing - 마케팅</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="topic-folder open">
+                      <div class="topic-folder-border"></div>
+                      <ul>
+                          <li>
+                            <a>
+                              <i class="icon-star-on left-star icon-star-on"></i>
+                              <span class="inline-overflow-ellipsis left-panel__name with-bell">Toss Lab, Inc.</span>
+                              <i class="noti-indicator"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="">
+                              <i class="icon-star-off left-star icon-star-on"></i>
+                              <span class="inline-overflow-ellipsis left-panel__name with-bell">Product - Global Meeting</span>
+                              <i class="noti-indicator"></i>
+                              <i class="off-topic-notification-indicator icon-bell-slash topic-setting-icon"></i>
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- DIRECT MESSAGES -->
+              <div class="lpanel-list__users">
+                <div>
+                  <!-- HEADER -->
+                  <div class="lpanel-list__header cursor_pointer">
+                    <i class="lpanel-collapse-arrow icon-arrow-up-fill"></i>
+                    <span class="lpanel-list__title inline-overflow-ellipsis">Direct Messages</span>
+                    <div class="lpanel-list-option pull-right" style="display: block;">
+                      <i class="icon-plus"></i>
+                    </div>
+                    <div class="lpanel-list-option pull-right" style="display: block;">
+                      <i class="icon-reorder"></i>
+                    </div>
+                  </div>
+                  <!-- LIST -->
+                  <ul style="display:block;">
+                    <div class="empty-message-list-container">
+                      <i class="icon-comment"></i>
+                      <div class="empty-message-list__new-message">
+                        <a><span>Click to start a new conversation</span></a>
+                      </div>
+                    </div>
+                  </ul>
+                  <div class="clear-both"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab_navigation">
+        <header>
+          <h2>Tab Navigation</h2>
+          <p>탭 메뉴는 두가지 타입 중 하나를 선택하여 사용합니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <h6>Type 1</h6>
+          <div class="tab_nav_type_1 jui-grid--12_of_12_small">
+            <ul class="nav-tabs">
+              <li class="tabs-active">All</li>
+              <li class="cursor_pointer">File</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-content grid-container">
+          <h6>Type 2</h6>
+          <div class="tab_nav_type_2">
+            <ul class="nav-tabs">
+              <li class="tabs-active"><i class="icon-bell"></i>Desktop Notifications</li>
+              <li class="cursor_pointer"><i class="icon-mail"></i>Email Notifications</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="main_section buttons">
+      <header>
+        <h1>Buttons</h1>
+      </header>
+      <section class="primary_buttons">
+        <header>
+          <h2>Primary Buttons</h2>
+          <p>Primary Button은 잔디의 가장 기본적인 버튼 스타일입니다.</p>
+        </header>
+
+        <div class="section-content">
+          <h6>Type</h6>
+
+          <nav>
+            <ul>
+              <li><a href="">Confirm</a></li>
+              <li><a href="">Normal</a></li>
+              <li><a href="">Cancel</a></li>
+            </ul>
+          </nav>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--primary">Confirm</div>
+              </div>
+              <div class="bg-skyblue">
+                <div class="jui-button--round jui-color--primary">Confirm</div>
+              </div>
+              <div class="bg-blue">
+                <div class="jui-button--round jui-color--primary">Confirm</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Confirm 타입은 확인, 회원가입, 로그인처럼 페이지 내에서 가장 중요한 액션을 가진 버튼에 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--primary is_outline">Normal 1</div>
+              </div>
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--primary is_outline_type_2">Normal 2</div>
+              </div>
+              <div class="bg-blue">
+                <div class="jui-button--round jui-color--primary is_outline_type_2">Normal 2</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Cancel 버튼은 주로 Confirm과 함께 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--mono is_outline">Cancel</div>
+              </div>
+              <div class="bg-blue">
+                <div class="jui-button--round jui-color--mono is_outline">Cancel</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Cancel 버튼은 주로 Confirm과 함께 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--primary disabled">disabled</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Confirm 타입은 확인, 회원가입, 로그인처럼 페이지 내에서 가장 중요한 액션을 가진 버튼에 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--mono is_outline disabled_outline">disabled</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Cancel 버튼은 주로 Confirm과 함께 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="section-content">
+          <h6>Color</h6>
+
+          <nav>
+            <ul>
+              <li><a href="">Red</a></li>
+              <li><a href="">Orange</a></li>
+              <li><a href="">Green</a></li>
+            </ul>
+          </nav>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--red">Red Button</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Red 컬러의 버튼은 팀 탈퇴, 팀 삭제와 같이 사용자에게 주의 혹은 경고를 해야할 때나 위험을 갖고 있는 요소에 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--green">Green Button</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Red 컬러의 버튼은 팀 탈퇴, 팀 삭제와 같이 사용자에게 주의 혹은 경고를 해야할 때나 위험을 갖고 있는 요소에 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--round jui-color--orange">Orange Button</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Red 컬러의 버튼은 팀 탈퇴, 팀 삭제와 같이 사용자에게 주의 혹은 경고를 해야할 때나 위험을 갖고 있는 요소에 사용합니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="section-content">
+          <h6>Size</h6>
+
+          <nav>
+            <ul>
+              <li><a href="">Small</a></li>
+              <li><a href="">Default</a></li>
+              <li><a href="">Large</a></li>
+            </ul>
+          </nav>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-dark">
+                <div class="jui-button--round_circular jui-color--white-navy">Small</div>
+              </div>
+              <div class="bg-white">
+                <div disabled class="jui-button--round_circular disabled">Small</div>
+              </div>
+            </div>
+            <figcaption class="section-description">작은 크기의 Primary Button이 필요할 때 사용합니다. Default, Large 사이즈보다 높은 Radius 값을 가집니다.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="text_buttons">
+        <header>
+          <h2>Text Buttons</h2>
+          <p>텍스트 버튼은 어떤 버튼 스타일일까요?</p>
+        </header>
+
+        <div class="section-content">
+          <h6>Color</h6>
+
+          <nav>
+            <ul>
+              <li><a href="">Blue</a></li>
+              <li><a href="">Gray</a></li>
+              <li><a href="">White</a></li>
+            </ul>
+          </nav>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-color--primary jui-button--text">
+                  Blue <i class="icon-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <figcaption class="section-description">Blue 컬러의 텍스트 버튼 설명</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--text jui-color--mono">
+                  <i class="icon-arrow-left"></i> Gray</div>
+              </div>
+            </div>
+            <figcaption class="section-description">Gray 컬러의 텍스트 버튼 설명.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-dark">
+                <div class="jui-button--text jui-color--white">
+                  <i class="icon-check"></i> White</div>
+              </div>
+            </div>
+            <figcaption class="section-description">White 컬러의 텍스트 버튼 설명.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+        </div>
+      </section>
+      <section class="icon_buttons">
+        <header>
+          <h2>Icon Buttons</h2>
+          <p>아이콘 버튼은 어떤 버튼 스타일일까요?</p>
+        </header>
+
+        <div class="section-content">
+          <h6>BG Color</h6>
+
+          <nav>
+            <ul>
+              <li><a href="">Light</a></li>
+              <li><a href="">Dark</a></li>
+            </ul>
+          </nav>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-white">
+                <div class="jui-button--text jui-color--mono">
+                  <i class="icon-check"></i>
+                </div>
+                <div class="jui-button--text jui-color--primary">
+                  <i class="icon-check"></i>
+                </div>
+                <div class="jui-button--text jui-color--brand">
+                  <i class="icon-check"></i>
+                </div>
+              </div>
+            </div>
+            <figcaption class="section-description">밝은 컬러의 배경일 때 아이콘 버튼 설명.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+          <figure>
+            <div class="section-element">
+              <div class="bg-dark">
+                <div class="jui-button--text jui-color--white">
+                  <i class="icon-check"></i>
+                </div>
+              </div>
+            </div>
+            <figcaption class="section-description">어두운 컬러의 배경일 때 아이콘 버튼 설명.</figcaption>
+            <figcaption class="section-code">&lt;button id="preview-components" class="jui-button--round jui-color--primary--button"&gt;Preview&lt;/button&gt;</figcaption>
+          </figure>
+
+        </div>
+      </section>
+    </section>
+    <section class="main_section checkboxes">
+      <header>
+        <h1>Checkboxes</h1>
+      </header>
+      <section>
+        <div class="section-content">
+          <figure>
+            <!--체크박스 div-->
+            <figcaption>체크박스 스타일 지정이 필요함.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section radio_buttons">
+      <header>
+        <h1>Radio Buttons</h1>
+      </header>
+      <section>
+        <div class="section-content">
+          <figure>
+            <!--라디오버튼 div-->
+            <figcaption>라디오버튼 스타일 지정이 필요함.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section toggle">
+      <header>
+        <h1>Toggle</h1>
+      </header>
+      <section>
+        <div class="section-content">
+          <figure>
+            <!--토글 div-->
+            <figcaption>토글 스타일에 대한 설명.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section selectboxes">
+      <header>
+        <h1>Selectboxes</h1>
+      </header>
+      <section>
+        <div class="section-content">
+          <figure>
+            <!--셀렉트 박스 div-->
+            <figcaption>셀렉트박스 스타일 지정이 필요함.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section badges">
+      <header>
+        <h1>Badges</h1>
+        <p>새 메시지 숫자를 보여주는 알림 뱃지입니다.</p>
+      </header>
+      <section>
+        <div class="section-content">
+          <figure>
+            <span class="badge unread-badge">26</span>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section label">
+      <header>
+        <h1>Label</h1>
+      </header>
+      <section class="label_shortcuts">
+        <header>
+          <h2>Shortcuts Label</h2>
+          <p>가장 작은 크기의 라벨 스타일입니다. 주로 특정 메뉴의 단축키를 표시하는 보조 텍스트로 쓰이므로 Shortcuts 라벨로 지칭합니다. Dropdown 메뉴 안에서 사용하거나 14px 이하의 텍스트와 함께 사용합니다.</p>
+        </header>
+        <div class="section-content">
+          <figure>
+            <div class="component-shortcuts-label">Shortcuts Label</div>
+          </figure>
+        </div>
+      </section>
+      <section class="label_connect">
+        <header>
+          <h2>Connect Label</h2>
+          <p>중간 크기의 라벨입니다. 15px 이상의 텍스트와 함께 사용할 경우에는 이 스타일을 사용합니다. 커넥트 메시지를 구분하는 라벨로 쓰이고 있습니다.</p>
+        </header>
+        <div class="section-content">
+          <figure>
+            <div class="component-connect-label">Connect Label</div>
+          </figure>
+        </div>
+      </section>
+      <section class="label_introduction">
+        <header>
+          <h2>Introduction Label</h2>
+          <p>가장 큰 사이즈의 라벨 스타일입니다. 단락을 구분할 필요가 있거나 시각적인 주목을 끌어야할 때 사용합니다.</p>
+        </header>
+        <div class="section-content">
+          <figure>
+            <div class="component-introduction-label">Introduction Label</div>
+          </figure>
+        </div>  
+      </section>
+    </section>
+    <section class="main_section pills">
+      <header>
+        <h1>Pills</h1>
+      </header>
+      <section class="pills_normal">
+        <header>
+          <h2>Normal</h2>
+          <p>기본 Pills 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <figure>
+            <div class="pill_normal">ej@tosslab.com
+              <i class="icon-delete"></i></div>
+          </figure>
+        </div>
+      </section>
+      <section class="pills_small">
+        <header>
+          <h2>Small</h2>
+          <p>작은 사이즈의 Pills 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <figure>
+            <div class="pill_small">
+              <span class="pill_small_text">Design - 디자인</span>
+              <i class="icon-remove-circle"></i></div>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section notifications">
+      <header>
+        <h1>Notifications</h1>
+      </header>
+      <section class="toast_success">
+        <header>
+          <h2>Toast—Success</h2>
+          <p>완료한 특정 액션에 대한 알림 메시지가 필요할 경우 토스트를 사용합니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <figure>
+            <div class="toast-container">
+              <div class="toast c-toast-success">
+                <div class="toast-icon"><i class="icon-check-circle"></i></div>
+                <div class="toast-text">파일을 성공적으로 공유했습니다.</div>
+                <div class="close-btn"><i class="icon-delete"></i></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="toast_warning">
+        <header>
+          <h2>Toast—Warning</h2>
+          <p>사용자가 위험성이 있는 액션을 하고자 할 경우 Warning 토스트 메시지로 안내합니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <figure>
+            <div class="toast-container">
+              <div class="toast c-toast-warning">
+                <div class="toast-icon"><i class="icon-help-fill"></i></div>
+                <div class="toast-text">이 토픽의 참여자 모두에게 멘션을 보냅니다.</div>
+                <div class="close-btn"><i class="icon-delete"></i></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="toast_error">
+        <header>
+          <h2>Toast—Error</h2>
+          <p>수행 불가능한 액션에 대한 안내 메시지가 필요할 경우 Error 토스트를 사용합니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <figure>
+            <div class="toast-container">
+              <div class="toast c-toast-error">
+                <div class="toast-icon"><i class="icon-warning-fill"></i></div>
+                <div class="toast-text">이미 사용 중인 토픽 이름입니다.</div>
+                <div class="close-btn"><i class="icon-delete"></i></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="floating_banner">
+        <header>
+          <h2>Floating Banner</h2>
+          <p>사용자가 닫기 버튼을 누르거나 요구하는 액션을 수행하기 전까지 계속 유지되어야 하는 메시지는 Floating Banner를 통해 안내합니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <h6>상단 플로팅 배너</h6>
+          <figure>
+            <div class="toast-container">
+              <div class="fbanner c-fbanner-info">
+                <div class="fbanner-text">팀으로부터 차단되었습니다. 자세한 사항은 팀 관리자에게 문의하세요.</div>
+                <div class="close-btn"><i class="icon-delete"></i></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="section-content grid-container">
+          <h6>하단 새 메시지 알림 배너—Default</h6>
+          <figure>
+            <div class="toast-container">
+              <div class="fbanner c-fbanner-newmsg">
+                <div class="fbanner-text">새 메시지가 있습니다.</div>
+                <div class="close-btn"><i class="icon-delete"></i></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="section-content">
+          <h6>하단 새 메시지 알림 배너—Small / 텍스트</h6>
+          <figure>
+            <div class="toast-container">
+              <div class="fbanner c-fbanner-newmsg-small">
+                <div class="fbanner-text">새 메시지</div>
+                <i class="icon-angle-double-down"></i>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="section-content">
+          <h6>하단 새 메시지 알림 배너—Small / 아이콘</h6>
+          <figure>
+            <div class="toast-container">
+              <div class="fbanner c-fbanner-newmsg-small-icon">
+                <i class="icon-arrow-down"></i>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section popover">
+      <header>
+        <h1>Popover</h1>
+      </header>
+      <section class="popover-default">
+        <header>
+          <h2>Default</h2>
+          <p>기본 팝오버 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="text-popover">
+            <div class="text-popover-arrow left"></div>
+            <button type="button" class="close" ng-click="close();">
+              <i class="icon-delete"></i>
+            </button>
+            <!-- 비디오 <div class="popover-video-container"><video autoplay="" loop="" muted="" preload="auto" src="./topic-foldering.gif"></video></div> 이미지 <div class="popover-image-container"><img ng-src="./topic-foldering.gif" src="./topic-foldering.gif"></div> -->
+            <div class="popover-text-container">
+              <div class="popover-title">Title</div>
+              <div class="popover-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis quis tincidunt congue. Ut id tempus libero. Nulla nec mauris vel ipsum dignissim finibus id ut arcu. Aliquam ac tincidunt turpis.</div>
+              <div class="popover-footer">
+                <div class="jui-button--round jui-color--primary">Confirm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popover-img">
+        <header>
+          <h2>with image</h2>
+          <p>이미지 요소가 있는 팝오버 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="img-popover">
+            <div class="text-popover-arrow left"></div>
+            <button type="button" class="close" ng-click="close();">
+              <i class="icon-delete"></i>
+            </button>
+            <div class="popover-image-container"><img ng-src="./topic-foldering.gif" src="./assets/images/jump.gif"></div>
+            <div class="popover-text-container">
+              <div class="popover-title">Title</div>
+              <div class="popover-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis quis tincidunt congue. Ut id tempus libero. Nulla nec mauris vel ipsum dignissim finibus id ut arcu. Aliquam ac tincidunt turpis.</div>
+              <div class="popover-footer">
+                <div class="jui-button--round jui-color--primary">Confirm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popover-video">
+        <header>
+          <h2>with video</h2>
+          <p>동영상이 있는 팝오버 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="img-popover">
+            <div class="text-popover-arrow left"></div>
+            <button type="button" class="close" ng-click="close();">
+              <i class="icon-delete"></i>
+            </button>
+            <div class="popover-video-container"><img ng-src="./topic-foldering.gif" src="./assets/images/topic-foldering.gif"></div>
+            <div class="popover-text-container">
+              <div class="popover-title">Title</div>
+              <div class="popover-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis quis tincidunt congue. Ut id tempus libero. Nulla nec mauris vel ipsum dignissim finibus id ut arcu. Aliquam ac tincidunt turpis.</div>
+              <div class="popover-footer">
+                <div class="jui-button--round jui-color--primary">Confirm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="main_section tooltips">
+      <header>
+        <h1>Tooltips</h1>
+      </header>
+      <section class="tooltips_black">
+        <header>
+          <h2>Default</h2>
+          <p>기본 툴팁 스타일입니다. 아이콘 버튼에 대한 기능을 텍스트로 안내하거나 상세 설명이 필요한 경우 사용합니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="tooltip-default">
+            <div class="tooltip-default-arrow"></div>
+            <span>더보기</span>
+          </div>
+        </div>
+      </section>
+      <section class="tooltips_blue">
+        <header>
+          <h2>Color</h2>
+          <p>튜토리얼 형식으로 사용하는 툴팁입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="tooltip-tutorial">
+            <div class="tooltip-tutorial-arrow"></div>
+            <span>파일을 올려보세요.</span>
+          </div>
+        </div>
+      </section>
+      <section class="tooltips_red">
+        <header>
+          <h2>Error</h2>
+          <p>주로 텍스트 입력창과 함께 쓰이며 에러 메시지를 보여줄 때 사용합니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="tooltip-error">
+            <div class="tooltip-error-arrow"></div>
+            <span>8자 이상 입력하세요.</span>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="main_section dropdown">
+      <header>
+        <h1>Dropdown</h1>
+      </header>
+      <section class="dropdown_list">
+        <header>
+          <h2>List type</h2>
+          <p>리스트형 드롭다운 스타일입니다.</p>
+        </header>
+        <section class="dropdown-default">
+          <div class="section-content">
+            <h6>Default</h6>
+            <div class="jandi-dropdown">
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu-item"><a>Toss Lab, Inc.</a></li>
+                <li class="dropdown-menu-item"><a>Design</a></li>
+                <li class="dropdown-menu-item"><a>Development</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="dropdown-with-icon">
+          <div class="section-content">
+            <h6>with icon</h6>
+            <div class="jandi-dropdown">
+              <ul class="dropdown-menu icon_dropdown">
+                <li class="dropdown-menu-item">
+                  <a><i class="icon-share-right"></i><span>Share</span></a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a><i class="icon-comment"></i><span>Comment</span></a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a><i class="icon-star-off"></i><span>Star</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="dropdown-with-image">
+          <div class="section-content">
+            <h6>with profile image</h6>
+            <div class="jandi-dropdown">
+              <ul class="dropdown-menu image_dropdown">
+                <li class="dropdown-menu-item">
+                  <a><img class="member__dropdown__thumb" ng-src="https://jandi-box.com/files-profile/b3f824de81e7b25a99fc0956ba7dff9b.jpeg?size=80" src="https://jandi-box.com/files-profile/b3f824de81e7b25a99fc0956ba7dff9b.jpeg?size=80">
+                  <span>Jane</span></a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a><img class="member__dropdown__thumb" ng-src="https://jandi-box.com/files-profile/b3f824de81e7b25a99fc0956ba7dff9b.jpeg?size=80" src="https://jandi-box.com/files-profile/bbf87824dd7f477e0f4e7487ff6f2947.png?size=80">
+                  <span>Hannah</span></a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a><img class="member__dropdown__thumb" ng-src="https://jandi-box.com/files-profile/b3f824de81e7b25a99fc0956ba7dff9b.jpeg?size=80" src="https://jandi-box.com/files-profile/8f9095a19e446d141c9771c5d0edfd8f?size=80">
+                  <span>Jay</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="dropdown_grid">
+        <header>
+          <h2>Grid type</h2>
+          <p>그리드형 드롭다운 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="jandi-dropdown">
+            <div class="sticker_panel">
+              <div class="sticker_panel_contents">
+                <ul class="sticker_panel_ul">
+                  <li class="sticker_panel_li">a</li>
+                  <li class="sticker_panel_li">b</li>
+                  <li class="sticker_panel_li">c</li>
+                  <li class="sticker_panel_li">d</li>
+                  <li class="sticker_panel_li">e</li>
+                  <li class="sticker_panel_li">f</li>
+                  <li class="sticker_panel_li">a</li>
+                  <li class="sticker_panel_li">b</li>
+                  <li class="sticker_panel_li">c</li>
+                  <li class="sticker_panel_li">d</li>
+                  <li class="sticker_panel_li">e</li>
+                  <li class="sticker_panel_li">f</li>
+                  <li class="sticker_panel_li">a</li>
+                  <li class="sticker_panel_li">b</li>
+                  <li class="sticker_panel_li">c</li>
+                  <li class="sticker_panel_li">d</li>
+                  <li class="sticker_panel_li">e</li>
+                  <li class="sticker_panel_li">f</li>
+                  <li class="sticker_panel_li">e</li>
+                  <li class="sticker_panel_li">f</li>
+                </ul>
+              </div>
+              <div class="sticker_panel_tab">
+                <ul>
+                  <li>1</li>
+                  <li>1</li>
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="main_section forms">
+      <header>
+        <h1>Forms</h1>
+      </header>
+      <section class="forms_textinput">
+        <header>
+          <h2>Text Input</h2>
+          <p>텍스트 입력창 스타일입니다.</p>
+        </header>
+        <section class="textinput-small">
+          <div class="section-content grid-container">
+            <h6>Small</h6>
+            <div class="jandi-input-small">
+              <input class="form-control" placeholder="input">
+            </div>
+          </div>
+        </section>
+        <section class="textinput-default">
+          <div class="section-content grid-container">
+            <h6>Default</h6>
+            <div class="jandi-input-default">
+              <input class="form-control" placeholder="input">
+            </div>
+          </div>
+        </section>
+        <section class="textinput-default">
+          <div class="section-content grid-container">
+            <h6>Read only</h6>
+            <div class="jandi-input-default readonly">
+              <input class="form-control" autofocus="" class="invite-public-link form-control invite" value="text" readonly="" ng-disabled="false">
+            </div>
+          </div>
+        </section>
+        <section class="textinput-default">
+          <div class="section-content grid-container">
+            <h6>With icon</h6>
+            <div class="jandi-input-default with-icon">
+              <input class="form-control" placeholder="input">
+              <i class="icon-delete"></i>
+            </div>
+          </div>
+        </section>
+        <section class="textinput-default">
+          <div class="section-content grid-container">
+            <h6>With fixed text</h6>
+            <div class="jandi-input-default with-fixedtext">
+              <input class="form-control" placeholder="input">
+              <div class="input-with-fixedtext-placeholder">.jandi.com</div>
+            </div>
+          </div>
+        </section>
+        <section class="textinput-default">
+          <div class="section-content grid-container">
+            <h6>Error</h6>
+            <div class="jandi-input-default error">
+              <input class="form-control" placeholder="input">
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="forms_textareas">
+        <header>
+          <h2>Textareas</h2>
+          <p>멀티라인 텍스트 입력창 스타일입니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <textarea class="message-input"></textarea>
+        </div>
+      </section>
+      <section class="forms_pwstck">
+        <header>
+          <h2>Password Strength Checker</h2>
+          <p>비밀번호 강도 안내 영역 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <figure>
+            <!--비번 강도 안내 div-->
+          </figure>
+        </div>
+      </section>
+    </section>
+    <section class="main_section modal">
+      <header>
+        <h1>Modal</h1>
+      </header>
+      <section class="modal_small">
+        <header>
+          <h2>Small</h2>
+          <p>작은 크기의 모달 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="profile-view-modal modal-content">
+            <div class="modal-body profile-view-body">
+              <div class="profile-image-wrapper">
+                <div class="profile-image-backdrop">
+                  <img class="profile-default-image-bg ng-scope" src="https://jandi-box.com/files-profile/db16dfdfa1e8fcb480cbbbc0db517d33.jpeg">
+                  <div class="profile-image-bg"></div>
+                  <div class="profile-condition">
+                    <div class="readonly break">하나둘셋넷다섯여섯일곱여덟아홉열열하나열둘열셋열넷열다섯열여섯열일곱열여덟열아홉스물스물하나스물둘스물셋스물넷스물다섯스</div>
+                    <div class="editing"></div>
+                  </div>
+                  <i class="icon-delete cursor_pointer"></i>
+                </div>
+                <div class="profile-image">
+                  <img ng-src="https://jandi-box.com/files-profile/db16dfdfa1e8fcb480cbbbc0db517d33.jpeg" src="https://jandi-box.com/files-profile/db16dfdfa1e8fcb480cbbbc0db517d33.jpeg">
+                </div>
+              </div>
+              <i class="user-star cursor_pointer icon-star-off"></i>
+              <div>
+                <div class="profile-text readonly">
+                  <div class="profile-name inline-overflow-ellipsis">sophie</div>
+                  <div class="profile-department inline-overflow-ellipsis">Design - UI/UX</div>
+                  <div class="profile-position inline-overflow-ellipsis">UI/UX designer</div>
+                  <div class="profile-phone-number inline-overflow-ellipsis">010-8818-1201</div>
+                  <div class="profile-email inline-overflow-ellipsis">sophie.choe@tosslab.com</div>
+                </div>
+              </div>
+              <div class="profile-actions">
+                <div class="action-buttons">
+                  <span class="action-email">
+                    <i class="icon-mail"></i>
+                    <span>
+                      <span>Send Email</span>
+                    </span>
+                  </span>
+                  <span class="action-file">
+                    <i class="icon-file"></i>
+                    <span>
+                      <span>Files Shared</span>
+                    </span>
+                  </span>
+                  <span class="action-go">
+                    <span class="action-dm">
+                      <i class="icon-chat"></i>
+                      <span>
+                        <span>1:1 Message</span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="modal_default">
+        <header>
+          <h2>Default</h2>
+          <p>기본 모달 스타일입니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <div class="modal-content modal-lg">
+            <div class="modal-header">
+              <h3 class="modal-header__title">
+                <span class="ng-scope">Modal - Header</span>
+              </h3>
+              <button type="button" class="close"><i class="icon-delete"></i></button>
+            </div>
+            <div class="modal-body">Modal - Body</div>
+          </div>
+        </div>
+      </section>
+      <section class="modal_large">
+        <header>
+          <h2>Large</h2>
+          <p>큰 사이즈의 모달 스타일입니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <div class="keyboard-shortcut-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close"><i class="icon-delete"></i></button>
+                  <h3 class="modal-header__title"><span>Modal - Header</span></h3>
+                </div>
+                <div class="modal-body">
+                  <section class="shortcut-list">
+                    Modal - Body
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="modal_full-screen">
+        <header>
+          <h2>Full-screen</h2>
+          <p>전체 화면 크기의 모달 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+        </div>
+      </section>
+    </section>
+    <section class="main_section search">
+      <header>
+        <h1>Search</h1>
+      </header>
+      <section class="search_large">
+        <header>
+          <h2>Large</h2>
+          <p>큰 크기의 검색창 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="quick-launcher-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="quick-launcher-search-box">
+                    <span class="input-group-addon">
+                      <i class="icon-search"></i>
+                    </span>
+                    <input class="form-control" id="quick-launcher-filter" maxlength="60" placeholder="Search">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="search_default">
+        <header>
+          <h2>Default</h2>
+          <p>기본 검색창 스타일입니다.</p>
+        </header>
+        <div class="section-content grid-container">
+          <div class="input-group search-user">
+            <span class="input-group-addon"><i class="icon-search"></i></span>
+            <input class="form-control" placeholder="Search">
+          </div>
+        </div>
+      </section>
+      <section class="search_small">
+        <header>
+          <h2>Small</h2>
+          <p>작은 크기의 검색창 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <div class="rpanel-search">
+            <i class="icon-search"></i>
+            <input class="form-control search-input rpanel-body-search__input" placeholder="Search">
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="main_section spinners">
+      <header>
+        <h1>Spinners</h1>
+      </header>
+      <section class="spinners_large">
+        <header>
+          <h2>Large</h2>
+          <p>큰 크기의 스피너 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <img src="./screenshot/spinner_large.png"/>
+        </div>
+      </section>
+      <section class="spinners_default">
+        <header>
+          <h2>Default</h2>
+          <p>기본 스피너 스타일입니다.</p>
+        </header>
+        <div class="section-content">
+          <img src="./screenshot/spinner_default.png"/>
+        </div>
+      </section>
+      <section class="spinners_with_text">
+        <header>
+          <h2>with message</h2>
+          <p>메시지 텍스트와 함께 쓰이는 스피너입니다.</p>
+        </header>
+        <div class="section-content">
+          <img src="./screenshot/spinner_with_message.png"/><br/>
+          <img src="./screenshot/spinner_with_message2.png"/><br/>
+          <img src="./screenshot/spinner_with_message_large.png"/>
+        </div>
+      </section>
+      <section class="spinners_with_box">
+        <header>
+          <h2>with box</h2>
+          <p>스피너를 감싸는 박스가 필요할 때는 아래와 같이 사용합니다.</p>
+        </header>
+        <div class="section-content">
+          <img src="./screenshot/spinner_with_box.png"/><br/>
+          <img src="./screenshot/spinner_with_box2.png"/>
+        </div>
+      </section>
+    </section>
+    <section class="main_section progress_bar">
+      <header>
+        <h1>Progress Bar</h1>
+      </header>
+      <section>
+        <div class="section-content">
+          <img src="./screenshot/progressbar_01.png"/><br/>
+          <img src="./screenshot/progressbar_02.png"/><br/>
+          <img src="./screenshot/progressbar_small_01.png"/><br/>
+          <img src="./screenshot/progressbar_small_02.png"/>
+        </div>
+      </section>
+    </section>
+  </div>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>

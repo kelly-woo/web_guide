@@ -1,0 +1,187 @@
+/* CSS Document */
+@charset "utf-8";
+/* 리셋 */
+
+/**
+ *Font Setting
+ */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/font-awesome/fonts/fontawesome-webfont.eot');
+  src: url('../assets/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+  url('../assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),
+  url('../assets/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
+  url('../assets/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Light'), local('NotoSans-Light'),
+  url('../assets/fonts/NotoSansKR-Light-Hestia.eot'),
+  url('../assets/fonts/NotoSansKR-Light-Hestia.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/NotoSansKR-Light-Hestia.woff') format('woff'),
+  url('../assets/fonts/NotoSansKR-Light-Hestia.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+  url('../assets/fonts/NotoSansKR-Regular-Hestia.eot'),
+  url('../assets/fonts/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/NotoSansKR-Regular-Hestia.woff') format('woff'),
+  url('../assets/fonts/NotoSansKR-Regular-Hestia.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url('../assets/fonts/NotoSansKR-Medium-Hestia.eot'),
+    url('../assets/fonts/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/NotoSansKR-Medium-Hestia.woff') format('woff'),
+    url('../assets/fonts/NotoSansKR-Medium-Hestia.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+  url('../assets/fonts/NotoSansKR-Bold-Hestia.eot'),
+  url('../assets/fonts/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/NotoSansKR-Bold-Hestia.woff') format('woff'),
+  url('../assets/fonts/NotoSansKR-Bold-Hestia.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+  url('../assets/fonts/Roboto-Light-webfont.eot'),
+  url('../assets/fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto-Light-webfont.woff') format('woff'),
+  url('../assets/fonts/Roboto-Light-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../assets/fonts/Roboto-Regular-webfont.eot'),
+  url('../assets/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto-Regular-webfont.woff') format('woff'),
+  url('../assets/fonts/Roboto-Regular-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('../assets/fonts/Roboto-Medium-webfont.eot'),
+  url('../assets/fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto-Medium-webfont.woff') format('woff'),
+  url('../assets/fonts/Roboto-Medium-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('../assets/fonts/Roboto-Bold-webfont.eot'),
+  url('../assets/fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Roboto-Bold-webfont.woff') format('woff'),
+  url('../assets/fonts/Roboto-Bold-webfont.ttf') format('truetype');
+}
+
+.fa {
+  font-family: 'FontAwesome' !important;
+}
+.fn-noto:lang(ko){
+  font-family: 'Noto Sans Korean' !important;
+}
+.fn-noto:lang(kr){
+  font-family: 'Noto Sans Korean' !important;
+}
+
+/**
+ * Font & word-break Setting by language
+ */
+:lang(jp) { font-family: 'Roboto', Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", helvetica, sans-serif ;word-break:break-all;letter-spacing:0;}
+:lang(ja) { font-family: 'Roboto', Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", helvetica, sans-serif ;word-break:break-all;letter-spacing:0;}
+:lang(ko) { font-family: 'Roboto', Arial, 'Malgun Gothic', '맑은 고딕' , 'Noto Sans Korean', sans-serif, serif; word-wrap:break-word;}
+:lang(kr) { font-family: 'Roboto', Arial, 'Malgun Gothic', '맑은 고딕' , 'Noto Sans Korean', sans-serif, serif; word-wrap:break-word;}
+:lang(en) { font-family: 'Roboto', Arial, sans-serif, serif; word-wrap:break-word;letter-spacing:0; }
+:lang(zh-cn) { font-family: 'Roboto', Arial, "Helvetica Neue",Helvetica,Arial,sans-serif ;word-break:break-all;letter-spacing:0; }
+:lang(zh-tw) { font-family: 'Roboto', Arial, "Helvetica Neue",Helvetica,Arial,sans-serif ;word-break:break-all;letter-spacing:0; }
+
+.break-all:lang(ko){word-wrap:normal;word-break:break-all}
+.break-all:lang(kr){word-wrap:normal;word-break:break-all}
+.break-all:lang(en){word-wrap:normal;word-break:break-all}
+
+.break-word:lang(ja){word-wrap:break-word;word-break:keep-all}
+.break-word:lang(jp){word-wrap:break-word;word-break:keep-all}
+.break-word:lang(zh-cn){word-wrap:break-word;word-break:keep-all}
+.break-word:lang(zh-tw){word-wrap:break-word;word-break:keep-all}
+
+*, :after, :before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{overflow:hidden;margin:0;padding:0;width:100%;height:100%;}
+html body{width:100%;height:100%;padding:0; margin:0;font-size:14px; color:#333; line-height:1em;overflow-y:auto}
+span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, button, abbr, address, big, cite, code, del, dfn, em, font, img, ins, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, textarea, input, figure, figcaption, video{margin:0px; padding:0px;}
+
+figure, figcaption, aside, article, section,{display:block;}
+table, caption, tbody, tfoot, thead, tr, th, td{padding:0;margin:0;}
+caption, legend{line-height: 0;font-size: 0;text-indent: -1600px;color:transparent;}
+img{border:0;vertical-align:middle}
+iframe{display:block;}
+html h1, html h2, html h3, html h4, html h5, html h6{font-size:1em;font-weight:normal;margin:0;}
+div, p{margin:0;padding:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;margin:0px;padding:0px}
+em{font-weight:inherit;font-style:inherit}
+strong{font-style:bold;font-weight:bold;margin:0px;padding:0px}
+ol,ul,li{list-style:none; text-decoration:none;}
+blockquote, q {quotes:none;}
+body a{color:#337ab7;text-decoration:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+body a:hover,body a:focus{border-bottom:1px solid #23527c;color:#23527c;line-height:1em ;padding-bottom:2px;text-decoration:none;}
+main,nav,aside,article,header,section,footer,figure{display:block;}
+table{width:100%;table-layout:fixed}
+body label {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+button{border:none;padding:0px 0px;cursor:pointer;background-color:transparent;}
+button:focus,select:focus{outline:0}
+fieldset{border:none; }
+/******* form *********/
+
+label.placeholder{line-height:25px;text-indent:3px;color:#aaa;text-align:left}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=text],input[type=number]{
+  -webkit-appearance:none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aaa;
+}
